@@ -8,7 +8,7 @@ void check(const string& Text, const string& key)
         if (key.empty())
             throw cipher_error("Empty key");
         if (stoi(key) > 0) {
-            modMarshCipher cipher(stoi(key));
+            modAlphaWood cipher(stoi(key));
             cipherText = cipher.encrypt(Text);
             decryptedText = cipher.decrypt(cipherText);
             cout<<"key="<<key<<endl;
