@@ -1,5 +1,5 @@
 #include  "modAlphaWood.h"
-std::string modMarshCipher::encrypt(const std::string& open_text)
+std::string modAlphaWood::encrypt(const std::string& open_text)
 {
     string s = getValidText(open_text);
     string n_s = s;
@@ -19,7 +19,7 @@ std::string modMarshCipher::encrypt(const std::string& open_text)
     return n_s;
 }
 
-std::string modMarshCipher::decrypt(const std::string& cipher_text)
+std::string modAlphaWood::decrypt(const std::string& cipher_text)
 {
     string s = getValidText(cipher_text);
     string n_s = s;
@@ -39,7 +39,7 @@ std::string modMarshCipher::decrypt(const std::string& cipher_text)
     return n_s;
 }
 
-inline std::string modMarshCipher::getValidText(const std::string & s)
+inline std::string modAlphaWood::getValidText(const std::string & s)
 {
     std::string tmp;
     for (auto c:s) {
