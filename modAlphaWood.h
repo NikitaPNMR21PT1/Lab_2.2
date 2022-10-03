@@ -7,14 +7,14 @@
 #include <iostream>
 #include <cctype>
 using namespace std;
-class modMarshCipher
+class modAlphaWood
 {
 private:
     int key;
     std::string getValidText(const std::string & s);
 public:
-    modMarshCipher()=delete;
-    modMarshCipher(const int& key1) :key(key1) {};
+    modAlphaWood()=delete;
+    modAlphaWood(const int& key1) :key(key1) {};
     std::string encrypt(const std::string& open_text);
     std::string decrypt(const std::string& cipher_text);
 };
